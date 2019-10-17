@@ -53,6 +53,7 @@ public class OnboardingActivity extends AppCompatActivity implements View.OnClic
         btnAnimation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.get_started_animation);
 
         mList = new ArrayList<>();
+        mList.add(new OnBoardScreenItem("Welcome to Shibe Restaurant",getString(R.string.Lorem),R.drawable.img1));
         mList.add(new OnBoardScreenItem("Fresh Foods ",getString(R.string.Lorem),R.drawable.img1));
         mList.add(new OnBoardScreenItem("Fast Delivery to your Destination",getString(R.string.Lorem),R.drawable.img2));
         mList.add(new OnBoardScreenItem("Easy Payment Via Mpesa",getString(R.string.Lorem),R.drawable.img3));
