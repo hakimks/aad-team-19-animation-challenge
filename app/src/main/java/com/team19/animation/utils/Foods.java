@@ -5,7 +5,7 @@ import com.team19.animation.models.Food;
 
 public class Foods {
 
-    public Food[] mainDishesFoods = {
+    public Food[] mainDishes = {
             //Main_dishes
             Mustard_stuffed_chicken, Spicy_root_and_lentil_casserole, Chicken_biryani, chicken_chasseur
             , Oven_baked_risotto, Veggie_shepherds_pie, Hearty_pasta_soup, Crispy_Greek_style_pie
@@ -65,19 +65,84 @@ public class Foods {
             ,276
             ,"Main Meal"
             , R.drawable.lasagne);
-    public static Food Parmesan_spring_chicken = new Food("Parmesan spring chicken"
-            ,"Dish up an easy, delicious chicken dinner that's full of spring flavours. The parmesan coating gives a satisfying crunch, and the meat inside stays tender..."
-            ,2503
-            ,"Main Meal"
-            , R.drawable.chickenbiryani);
 
 
-//    //Desserts
-//            ,Profiterolesalted_toffee_ice_cream_sandwiches,Ultimate_lemon_meringue_pie
-//            ,Matcha_mousse_cake,No_cook_chocolate_tart,Strawberry_cheesecake,Almond_and_apple_tart
-//            ,Lavender_poached_pear_with_Poire_Williams_pudding,Pear_and_hazelnut_dartois
-//            ,Ultimate_crème_brûlée,Champagne_raspberry_possets,Chocolate_hazelnut_ice_cream_cheesecake
-//            ,Strawberry_and_elderflower_trifle,Luscious_lemon_baked_cheesecake
+
+    public Food[] desserts = {
+
+            //    //Desserts
+            Profiterolesalted_toffee_ice_cream_sandwiches,Ultimate_lemon_meringue_pie
+            ,Matcha_mousse_cake,No_cook_chocolate_tart,Strawberry_cheesecake,Almond_and_apple_tart
+            ,Lavender_poached_pear_with_Poire_Williams_pudding,Pear_and_hazelnut_dartois
+            ,Ultimate_crème_brûlée,Champagne_raspberry_possets,Chocolate_hazelnut_ice_cream_cheesecake
+            ,Strawberry_and_elderflower_trifle,Luscious_lemon_baked_cheesecake
+
+    };
+
+    public static Food Profiterolesalted_toffee_ice_cream_sandwiches = new Food("Profiterole & salted toffee ice cream sandwiches"
+            ,"Drizzle these fresh choux buns with plenty of hot toffee sauce and top with whatever you like – try homemade honeycomb, chopped nuts or your favourite chocolate bar..."
+            ,447
+            ,"Dessert"
+            ,R.drawable.profiterole);
+
+    public static Food Ultimate_lemon_meringue_pie = new Food("Ultimate lemon meringue pie"
+            ,"You can't go wrong with one of Angela Nilsen's ultimates and this is no exception"
+            ,1810
+            ,"Dessert"
+            ,R.drawable.ultimate);
+
+    public static Food  Matcha_mousse_cake= new Food("Matcha mousse cake"
+            ,"A popular ingredient in Asian desserts, matcha powder is made from finely ground green tea leaves. This pretty cake with white chocolate glaze and cherries is a bit of a challenge but worth it"
+            ,428
+            ,"Dessert"
+            ,R.drawable.matcha);
+
+    public static Food  No_cook_chocolate_tart= new Food("No-cook chocolate tart"
+            ,"You can make it up to two days ahead. Any leftovers will make a welcome treat with a cup of coffee the next day"
+            ,288
+            ,"Dessert"
+            ,R.drawable.nocook);
+
+    public static Food  Strawberry_cheesecake= new Food("Strawberry cheesecake"
+            ,"Follow our step-by-step recipe for this easy no-cook cheesecake – a delicious summer dessert for all occasions..."
+            ,1457
+            ,"Dessert"
+            ,R.drawable.strawberry);
+
+    public static Food  Almond_and_apple_tart = new Food("Almond & apple tart"
+            ,"This autumnal tart has a delicate, sweet flavour and nutty frangipane filling. Serve with a dollop of Calvados Chantilly cream"
+            ,345
+            ,"Dessert"
+            ,R.drawable.almondjpg);
+
+    public static Food  Lavender_poached_pear_with_Poire_Williams_pudding = new Food("Lavender poached pear with Poire Williams pudding"
+            ,"This make ahead dessert of pear liqueur-soaked sponge pudding with tender poached pears and a dollop of Chantilly cream is ideal for an autumn dinner party"
+            ,1690
+            ,"Dessert"
+            ,R.drawable.lavender);
+
+    public static Food  Pear_and_hazelnut_dartois = new Food("Pear & hazelnut dartois"
+            ,"A dartois is a delicate puff pastry tart, filled with frangipane and fresh fruit - a winning dessert if you're entertaining guests..."
+            ,1346
+            ,"Dessert"
+            ,R.drawable.pear);
+
+    public static Food  Ultimate_crème_brûlée = new Food("Ultimate crème brûlée"
+            ,"Our professional tips will help you to create this crunchy-and-custardy delight"
+            ,1774
+            ,"Dessert"
+            ,R.drawable.ultimatecreamjpg);
+
+    public static Food  Champagne_raspberry_possets = new Food("Champagne & raspberry possets"
+            ,"The dryness of your chosen fizz works well with the delicate sweetness of this impressive posset"
+            ,949
+            ,"Dessert"
+            ,R.drawable.champagne);
+
+
+
+
+
 //
 //    //Drinks
 //            ,Old_Fashioned,Margarita,Cosmopolitan,Negroni,Moscow_Mule,Mojito,Whiskey_sour,Manhattan
