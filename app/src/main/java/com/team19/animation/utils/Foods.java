@@ -5,12 +5,12 @@ import com.team19.animation.models.Food;
 
 public class Foods {
 
+    //Main_dishes
     public Food[] mainDishes = {
-            //Main_dishes
+
             Mustard_stuffed_chicken, Spicy_root_and_lentil_casserole, Chicken_biryani, chicken_chasseur
             , Oven_baked_risotto, Veggie_shepherds_pie, Hearty_pasta_soup, Crispy_Greek_style_pie
-            , paella, salmon_with_roast_asparagus, Parmesan_spring_chicken
-
+            , paella, salmon_with_roast_asparagus
     };
 
     public static Food Mustard_stuffed_chicken = new Food("Mustard-stuffed chicken"
@@ -67,16 +67,15 @@ public class Foods {
             , R.drawable.lasagne);
 
 
+    //    //Desserts
 
     public Food[] desserts = {
 
-            //    //Desserts
+
             Profiterolesalted_toffee_ice_cream_sandwiches,Ultimate_lemon_meringue_pie
             ,Matcha_mousse_cake,No_cook_chocolate_tart,Strawberry_cheesecake,Almond_and_apple_tart
             ,Lavender_poached_pear_with_Poire_Williams_pudding,Pear_and_hazelnut_dartois
-            ,Ultimate_crème_brûlée,Champagne_raspberry_possets,Chocolate_hazelnut_ice_cream_cheesecake
-            ,Strawberry_and_elderflower_trifle,Luscious_lemon_baked_cheesecake
-
+            ,Ultimate_crème_brûlée,Champagne_raspberry_possets
     };
 
     public static Food Profiterolesalted_toffee_ice_cream_sandwiches = new Food("Profiterole & salted toffee ice cream sandwiches"
@@ -143,10 +142,82 @@ public class Foods {
 
 
 
-//
-//    //Drinks
-//            ,Old_Fashioned,Margarita,Cosmopolitan,Negroni,Moscow_Mule,Mojito,Whiskey_sour,Manhattan
-//            ,Mimosa,Gimlet
+
+
+
+    //Drinks
+
+    public Food[] drinks = {
+            Old_Fashioned, Margarita, Cosmopolitan, Negroni, Moscow_Mule, Mojito, Whiskey_sour, Manhattan
+            , Mimosa, Gimlet
+    };
+
+    public static Food  Old_Fashioned = new Food("Old Fashioned"
+            ,"There may be no better test of a bartender's mettle than ordering an Old Fashioned"
+            ,1358
+            ,"Drink"
+            ,R.drawable.old);
+
+    public static Food  Margarita = new Food("Margarita"
+            ,"Cloyingly sweet margarita mixes have given this drink a bad name. A well-made version is a fresh mix of lime juice and tequila, with a hint of sweetener"
+            ,752
+            ,"Drink"
+            ,R.drawable.old);
+
+    public static Food  Cosmopolitan = new Food("Cosmopolitan"
+            ,"The cosmo became almost ubiquitous in the '90s thanks to the TV show Sex and the City, but this spin on the martini remains just as tasty today as when Carrie Bradshaw made it famous."
+            ,522
+            ,"Drink"
+            ,R.drawable.cosmo);
+
+    public static Food  Negroni = new Food("Negroni"
+            ,"A favorite of bartenders all over the world, the Negroni is a simple three-ingredient cocktail"
+            ,1087
+            ,"Drink"
+            ,R.drawable.cosmo);
+
+    public static Food  Moscow_Mule = new Food("Moscow Mule"
+            ,"Popular for good reason, the Moscow Mule is one of the most refreshing things to sip on a hot summer day. Its suggested vessel, a copper mug, also just looks sharp."
+            ,183
+            ,"Drink"
+            ,R.drawable.moscow);
+
+    public static Food  Mojito = new Food("Mojito"
+            ,"Originating in Cuba, this refreshing rum-based sip is filled with mint and lime—a perfectly tropical combination for sipping by the pool or beach"
+            ,368
+            ,"Drink"
+            ,R.drawable.mohito);
+
+    public static Food  Whiskey_sour = new Food("Whiskey Sour"
+            ,"Perhaps the most refreshing whiskey cocktail, this is an old reliable favorite."
+            ,763
+            ,"Drink"
+            ,R.drawable.whiskey);
+
+    public static Food  Manhattan = new Food("Manhattan"
+            ,"Created sometime in the mid-1800s, the Manhattan is one of the booziest classic drink recipes."
+            ,908
+            ,"Drink"
+            ,R.drawable.manhattan);
+
+    public static Food  Mimosa = new Food("Mimosa"
+            ,"We'd like to salute Frank Meier, the bartender at the Ritz Paris who in 1925 reportedly served the first mimosa. The recipe just might be the simplest cocktail ever created."
+            ,1280
+            ,"Drink"
+            ,R.drawable.mimosa);
+
+    public static Food  Gimlet = new Food("Gimlet"
+            ,"The classic recipe calls for gin, but this drink is just as tasty if you substitute vodka instead."
+            ,1002
+            ,"Drink"
+            ,R.drawable.gimlet);
+
+
+
+
+
+
+
 
 
 }
