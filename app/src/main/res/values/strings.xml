@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Team 19 Animation Challenge</string>
+    <string name="item_description">Food description</string>
+    <string name="delete">delete the chosen item from cart</string>
+    <string name="add">add other items to cart</string>
+    <string name="thumbnail">food image</string>
 </resources>
