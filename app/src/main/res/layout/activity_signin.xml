@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignInActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -178,7 +178,7 @@
                             android:foreground="?android:attr/selectableItemBackground"
                             android:padding="15dp"
                             android:text="Sign up"
-                            android:onClick="OpenSignupPage"
+                            android:onClick="OpenSignUpPage"
                             android:textColor="#191919"
                             android:textSize="25sp"
                             android:textStyle="bold" />
