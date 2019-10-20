@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#EBE7E7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.0"
+        android:background="#EBE7E7"
+        tools:listitem="@layout/item_cart" />
+    <RelativeLayout
+        android:layout_weight = "1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:background="#ff0000"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="CheckOut" />
+    </RelativeLayout>
+</LinearLayout>
