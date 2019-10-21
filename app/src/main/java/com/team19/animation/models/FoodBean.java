@@ -5,7 +5,10 @@ public class FoodBean {
     private int price;
     private int imageDrawable;
     private String name;
-    public FoodBean(){}
+
+    public FoodBean(){
+    }
+
     public FoodBean(int imageDrawable, String name,String description,int price){
         this.imageDrawable = imageDrawable;
         this.name=name;
