@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.ui;
 
 public class OnBoardScreenItem {
     String title,description;

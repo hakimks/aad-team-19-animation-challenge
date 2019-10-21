@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.models;
 
 public class FoodBean {
     private String description;
