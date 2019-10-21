@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,9 +13,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
+import com.team19.animation.adapters.OnboardingViewPagerAdapter;
+import com.team19.animation.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class OnboardingActivity extends AppCompatActivity implements View.OnClickListener {
     private ViewPager layoutPager;
@@ -110,7 +112,7 @@ public class OnboardingActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void startLoginActivity() {
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
