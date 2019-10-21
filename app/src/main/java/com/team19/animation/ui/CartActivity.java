@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.ui;
 
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
+
+import com.team19.animation.adapters.CartAdapter;
+import com.team19.animation.R;
+import com.team19.animation.models.FoodBean;
 
 import java.util.ArrayList;
 
