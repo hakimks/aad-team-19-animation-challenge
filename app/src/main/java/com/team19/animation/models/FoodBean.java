@@ -1,11 +1,14 @@
-package com.team19.animation;
+package com.team19.animation.models;
 
 public class FoodBean {
     private String description;
     private int price;
     private int imageDrawable;
     private String name;
-    public FoodBean(){}
+
+    public FoodBean(){
+    }
+
     public FoodBean(int imageDrawable, String name,String description,int price){
         this.imageDrawable = imageDrawable;
         this.name=name;

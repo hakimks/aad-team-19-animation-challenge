@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.team19.animation.ui.OnBoardScreenItem;
+import com.team19.animation.R;
 
 import java.util.List;
 
