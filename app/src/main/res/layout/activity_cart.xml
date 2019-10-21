@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#EBE7E7"
+    android:background="#D3D3D3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CartActivity">
@@ -15,26 +15,28 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9.0"
-        android:background="#EBE7E7"
+        android:background="#D3D3D3"
         tools:listitem="@layout/item_cart" />
     <RelativeLayout
         android:layout_weight = "1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         >
+
         <Button
             android:id="@+id/order"
             android:layout_width="match_parent"
-            android:background="#ff0000"
-            android:textColor="@android:color/black"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:text="CheckOut" />
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/montserrat"
+            android:text="CheckOut"
+            android:textColor="@color/colorBlack" />
     </RelativeLayout>
 </LinearLayout>
