@@ -5,6 +5,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Dimension;
@@ -18,12 +21,16 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.team19.animation.anim.CircleAnimator;
 import com.team19.animation.misc.FabBackground;
 import com.team19.animation.misc.Point2d;
+import com.team19.animation.ui.MainActivity;
 import com.team19.animation.util.ViewUtil;
 
 import butterknife.BindDimen;
@@ -35,7 +42,18 @@ import butterknife.OnClick;
 import static com.team19.animation.util.AnimUtil.sequentially;
 import static com.team19.animation.util.AnimUtil.together;
 
-public class MainActivity extends AppCompatActivity implements View.OnLayoutChangeListener {
+
+
+public class SignInActivity extends AppCompatActivity implements View.OnLayoutChangeListener {
+	SharedPreferences sharedpreferences;
+	public static final String MyPREFERENCES = "MyPrefs";
+	public static final String username = "usernameKey";
+	public static final String password = "passwordKey";
+	public static final String email = "emailKey";
+
+	private Button btnSignUp;
+	private Button btnSignIn;
+
 	@BindView(R.id.l_root)
 	ViewGroup rootLayout;
 
@@ -71,10 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLayoutChan
 	private FabBackground fabBackground;
 	private AnimatorSet showRegisterScreenAnimatorSet, hideRegisterScreenAnimatorSet;
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_signin_signup);
+		initViews();
+
 		ButterKnife.bind(this);
 
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -83,6 +104,20 @@ public class MainActivity extends AppCompatActivity implements View.OnLayoutChan
 		}
 
 		rootLayout.addOnLayoutChangeListener(this);
+
+		btnSignUp.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(SignInActivity.this, MainActivity.class));
+			}
+		});
+
+		btnSignIn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(SignInActivity.this, MainActivity.class));
+			}
+		});
 	}
 
 	@Override
@@ -378,14 +413,19 @@ public class MainActivity extends AppCompatActivity implements View.OnLayoutChan
 				.z(frontScreenElevation)
 				.y(pRegisterScreen.y)
 				.scaleX(1f);
+
 	}
 
 	private void setupLoginScreenValues() {
-		registerScreen.setClipChildren(true); // HACK: clip children & circular reveal clip confront each other. See: https://stackoverflow.com/questions/44748155/circular-reveal-shows-black-background
+		registerScreen.setClipChildren(true);
 		registerButton.setClickable(false);
 		registerButton.setVisibility(View.VISIBLE);
 		closeButton.setVisibility(View.INVISIBLE);
 		fabBackground.clear();
 	}
-	//endregion
+
+	public void initViews() {
+		btnSignUp = findViewById(R.id.btn_signup);
+		btnSignIn = findViewById(R.id.btn_signin);
+	}
 }
