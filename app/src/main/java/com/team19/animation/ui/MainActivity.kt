@@ -1,7 +1,8 @@
-package com.team19.animation
+package com.team19.animation.ui
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.team19.animation.R
 
 class MainActivity : AppCompatActivity() {
 
