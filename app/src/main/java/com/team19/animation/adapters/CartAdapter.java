@@ -96,11 +96,16 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             imageDelete.setOnClickListener(this);
         }
         public void decrementQuantity(){
-
+        // When you decrement the quantity beyond 1, 0
+        // will result in 0*price, which is an ultimate crash.
+        //So accept decrement while its still more than one
+        //Else the user should just remove it instead of decrementing past one.
+             if(quantity > 1){
             quantity=quantity-1;
             price=(price*quantity)/(quantity+1);
             counter.setText(String.valueOf(quantity));
             foodPrice.setText("ksh"+price);
+           }
 
         }
         public void incrementQuantity(){
