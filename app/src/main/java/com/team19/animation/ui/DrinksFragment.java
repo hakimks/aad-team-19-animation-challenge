@@ -1,4 +1,4 @@
-package com.team19.animation;
+package com.team19.animation.ui;
 
 
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.team19.animation.R;
 import com.team19.animation.adapters.MainScreenRecyclerAdapter;
 import com.team19.animation.models.Food;
 import com.team19.animation.utils.Foods;
@@ -18,34 +19,31 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class MainDishesFragment extends Fragment {
+public class DrinksFragment extends Fragment {
+    private static final String TAG = "DrinksFragment";
     private RecyclerView recyclerView;
     private ArrayList<Food> foodlist;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_main_dishes, container,false);
-        recyclerView = view.findViewById(R.id.maindishes_recyclerview);
+        View view = inflater.inflate(R.layout.fragment_drinks, container,false);
+        recyclerView = view.findViewById(R.id.drinks_recyclerview);
         MainScreenRecyclerAdapter mainScreenRecyclerAdapter = new MainScreenRecyclerAdapter(getContext(),foodlist);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(mainScreenRecyclerAdapter);
         return view;
     }
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 
+        Foods food = new Foods();
         foodlist = new ArrayList<>();
-        Food[] mainDishes = new Foods().getMainDishes();
 
-        foodlist.addAll(Arrays.asList(mainDishes));
+        foodlist.addAll(Arrays.asList(food.drinks));
     }
-
 }

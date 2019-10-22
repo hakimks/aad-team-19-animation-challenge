@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.team19.animation.DessertsFragment;
-import com.team19.animation.DrinksFragment;
-import com.team19.animation.MainDishesFragment;
 import com.team19.animation.R;
 import com.team19.animation.adapters.FragmentsHolderViewPagerAdapter;
 
