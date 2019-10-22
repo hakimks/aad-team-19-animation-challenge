@@ -112,7 +112,7 @@ public class OnboardingActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void startLoginActivity() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainFragmentActivity.class);
         startActivity(intent);
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
