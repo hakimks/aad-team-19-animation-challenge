@@ -13,4 +13,7 @@
     <string name="biryani_description">A great one-pot rice dish that can still be served up a few days later, perfect for leftovers</string>
     <string name="chicken_chasseur_description">This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread,3380,</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

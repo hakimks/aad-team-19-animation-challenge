@@ -4,6 +4,17 @@ import com.team19.animation.R;
 import com.team19.animation.models.Food;
 
 public class Foods {
+    public Food[] getMainDishes() {
+        return mainDishes;
+    }
+
+    public Food[] getDesserts() {
+        return desserts;
+    }
+
+    public Food[] getDrinks() {
+        return drinks;
+    }
 
     //Main_dishes
     public Food[] mainDishes = {
@@ -162,7 +173,7 @@ public class Foods {
             ,"Cloyingly sweet margarita mixes have given this drink a bad name. A well-made version is a fresh mix of lime juice and tequila, with a hint of sweetener"
             ,752
             ,"Drink"
-            ,R.drawable.old);
+            ,R.drawable.margarita);
 
     public static Food  Cosmopolitan = new Food("Cosmopolitan"
             ,"The cosmo became almost ubiquitous in the '90s thanks to the TV show Sex and the City, but this spin on the martini remains just as tasty today as when Carrie Bradshaw made it famous."
