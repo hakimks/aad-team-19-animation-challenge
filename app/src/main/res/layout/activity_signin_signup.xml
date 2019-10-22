@@ -7,7 +7,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/bg_activity"
-	tools:context="com.team19.animation.SignInActivity">
+	tools:context="com.team19.animation.ui.SignInActivity">
 
 	<com.team19.animation.widget.SizedCardView
 		android:id="@+id/cv_back"

@@ -1,4 +1,4 @@
-package com.team19.animation.misc;
+package com.team19.animation.widget;
 
 
 import android.graphics.PointF;

@@ -1,4 +1,4 @@
-package com.team19.animation.anim;
+package com.team19.animation.utils;
 
 import android.animation.ValueAnimator;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import com.team19.animation.misc.Point2d;
+import com.team19.animation.widget.Point2d;
 
 
 public class CircleAnimator extends ValueAnimator {

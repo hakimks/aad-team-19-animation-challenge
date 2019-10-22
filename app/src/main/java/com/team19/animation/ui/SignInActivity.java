@@ -1,11 +1,10 @@
-package com.team19.animation;
+package com.team19.animation.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -24,14 +23,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.team19.animation.anim.CircleAnimator;
-import com.team19.animation.misc.FabBackground;
-import com.team19.animation.misc.Point2d;
-import com.team19.animation.ui.MainActivity;
-import com.team19.animation.util.ViewUtil;
+import com.team19.animation.R;
+import com.team19.animation.utils.CircleAnimator;
+import com.team19.animation.widget.FabBackground;
+import com.team19.animation.widget.Point2d;
+import com.team19.animation.utils.ViewUtil;
 
 import butterknife.BindDimen;
 import butterknife.BindInt;
@@ -39,8 +36,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.team19.animation.util.AnimUtil.sequentially;
-import static com.team19.animation.util.AnimUtil.together;
+import static com.team19.animation.utils.AnimUtil.sequentially;
+import static com.team19.animation.utils.AnimUtil.together;
 
 
 

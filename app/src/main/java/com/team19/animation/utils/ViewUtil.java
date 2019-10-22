@@ -1,4 +1,4 @@
-package com.team19.animation.util;
+package com.team19.animation.utils;
 
 
 import android.view.View;

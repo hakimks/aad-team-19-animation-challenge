@@ -9,8 +9,7 @@ import android.graphics.Path;
 import android.support.v7.widget.CardView;
 import android.util.AttributeSet;
 
-import com.team19.animation.anim.CircleAnimator;
-import com.team19.animation.misc.Point2d;
+import com.team19.animation.utils.CircleAnimator;
 
 
 /**
